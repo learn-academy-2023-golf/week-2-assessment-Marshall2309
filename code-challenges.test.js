@@ -12,17 +12,41 @@
 // --------------------INSTRUCTOR EXAMPLE: Create a function that takes in an array of numbers and returns an array with all the numbers multiplied by 3.
 
 // a) Create a test with expect statements for each of the variables provided.
+describe("multiplyBy3", () => {
+    it("returns an array with all the numbers multiplied by 3.", () => {
+        const numbersArray1 = [6, 7, 8, 9, 10]
+        // Expected output: [18, 21, 24, 27, 30]
+        const numbersArray2 = [24, 27, 30, 33, 36]
+        // Expected output: [72, 81, 90, 99, 108]
+      expect(multiplyBy3(numbersArray1)).toEqual([18, 21, 24, 27, 30])
+      expect(multiplyBy3(numbersArray2)).toEqual([72, 81, 90, 99, 108])
+    })
+  })
 
-const numbersArray1 = [6, 7, 8, 9, 10]
-// Expected output: [18, 21, 24, 27, 30]
-const numbersArray2 = [24, 27, 30, 33, 36]
-// Expected output: [72, 81, 90, 99, 108]
 
 // b) Create the function that makes the test pass.
+const multiplyBy3 = (numbersArray1, numbersArray2) => {
+    return array.map(numbersArray1 * 3)
+}
 
-// Pseudo code:
+
+
+
+// Pseudo code: I DID NOT GET A CHANCE TO FINISH THIS PART OF THE ASSESSMENT. OUTSIDE OF CLASS, I'M EXTREMELY SHORT ON TIME AND I RAN OUT OF TIME FOR THIS OVER THE WEEKEND.
+
+
+
+
 
 // --------------------1) Create a function that takes a object as an argument and decides if the number inside it is evenly divisible by three or not.
+
+describe("divisibleByThree", () => {
+    // nested inside the describe block, it in plain words describes what the function does
+    it("decides if the number inside it is evenly divisible by three or not", () => {
+      // expect will invoke the function and compare the result to a predetermined expected output using .toEqual matcher
+      expect(divisibleByThree()).toEqual("is divisible by three!")
+    })
+  })
 
 // a) Create a test with expect statements for each of the variables provided.
 
