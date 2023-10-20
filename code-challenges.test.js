@@ -66,9 +66,13 @@ const object3 = { number: -7 }
 // b) Create the function that makes the test pass.
 
 // Pseudo code:
-//divisibleByThree function takes an object as an argument 
-//Checks against the modulo
-//It returns the appropriate string
+//input: divisibleByThree function takes an object as an argument
+//output: "15 is divisible by three", "15 is divisible by three", "-7 is not divisible by three"
+// divisibleByThree function takes an object as an argument
+//Checks against the modulo to see if the objects are divisible by three.
+//If the condition is true, it returns a string stating that the number is divisible by three.
+//If the condition is false, it returns a string stating that the number is not divisible by three.
+
 
 // --------------------2) Create a function that takes in an array of words and returns an array with all the words capitalized.
 const capitalizeWords = (words) => {
